@@ -1,0 +1,18 @@
+﻿<h1>Contact List</h1>
+<div>
+    <div class="row">
+        <div class="col-md-4"><strong>First Name</strong></div>
+        <div class="col-md-4"><strong>Last Name</strong></div>
+        <div class="col-md-4"><strong>Phone Number</strong></div>
+        </div>
+    <!-- contactList here is in reference to the controller, see app.ts -->
+    <div class="row" ng-repeat="contact in contactList.contacts">
+        <a href ="#/details/{{contact.firstName}}">
+        <div class="col-md-4">{{contact.firstName}}</div>
+        <div class="col-md-4">{{contact.lastName}}</div>
+        <div class="col-md-4">{{contact.phoneNumber}}</div>
+        </a>
+    </div>
+
+   
+</div>

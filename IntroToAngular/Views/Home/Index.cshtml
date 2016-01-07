@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+ }
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="IntroToAngular">
+<head>
+    <title></title>
+    @Styles.Render("~/Content/CSS")
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers/home.js"></script>
+    <script src="~/ngApp/controllers/detailsController.js"></script>
+    <script src="~/ngApp/controllers/listController.js"></script>
+</head>
+
+@*setting a variable called home, which we can use in view now*@
+@* let home = HomeController *@
+@* directives should be SPINAL CASE *@
+<body @*ng-controller="HomeController as home"*@>
+
+    <div class="container">
+        <div class="col-md-12"><h1>Practice with Angular</h1></div>
+        <div class="col-md-11">
+            @*ng-view is specific to routing*@
+            <ng-view></ng-view>
+            @* ng-include will allow you to insert a banner to a couple of pages, link should be a string *@
+        </div>
+    </div>
+    
+
+    @*Hello World!
+
+    <input ng-model="home.username" />
+    {{home.username}}
+
+    <input type="button" value="CLICK ME" ng-click="home.setUsername('test')"/>
+    <br />
+
+    
+    <input ng-model="home.value1" type="number"/>
+    <input type="button" value="+" ng-click="home.add()" />
+    <input type="button" value="-" ng-click="home.minus()" />
+    <input type="button" value="*" ng-click="home.multiply()" />
+    <input type="button" value="/" ng-click="home.divide()" />
+    <br/>
+    <input ng-model="home.value2" type="number"/>*@
+    @*<input type="button" value="TOTAL" ng-click="home.()" />*@
+    @*<br/>
+    <div id="result">= {{home.result}}</div>*@
+
+
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+﻿<h1>A Simple Calculator</h1>
+<input ng-model="home.value1" type="number" />
+<input type="button" value="+" ng-click="home.add()" />
+<input type="button" value="-" ng-click="home.minus()" />
+<input type="button" value="*" ng-click="home.multiply()" />
+<input type="button" value="/" ng-click="home.divide()" />
+<br />
+<input ng-model="home.value2" type="number" />
+<br />
+<div id="result">= {{home.result}}</div>
